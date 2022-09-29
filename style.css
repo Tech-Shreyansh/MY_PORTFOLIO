@@ -1,1 +1,32 @@
+/* .nav_checkbox {
+    display: none;
+}
 
+.nav_cb_btn {
+    height: 5rem;
+    width: 5rem;
+    background-color: red;
+    position: fixed;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    right: 10rem;
+    top: 3rem;
+}
+ */
+.body {
+    display: inherit;
+}
+
+.head {
+    background-image: url("./img/bg.jpg");
+    height: 50vh;
+    text-align: center;
+    color: white;
+}
+
+.head_elements {
+    margin-top: 200px;
+    display: block;
+    text-align: center;
+}
