@@ -1,157 +1,280 @@
-                * {
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                }
-                
-                header {
-                    background-image: url("./bg\ pic.png");
-                    background-color: rgb(228, 231, 233);
-                    height: 100vh;
-                    color: black;
-                    background-repeat: no-repeat;
-                    background-size: 100%, cover;
-                    background-attachment: scroll, fixed;
-                    background-position: center;
-                    background-position-y: top;
-                }
-                
-                .nav_link_i {
-                    display: flex;
-                    flex-direction: row;
-                    height: 2rem;
-                    align-items: center;
-                    padding-left: 6%;
-                }
-                
-                .nav_link_i li {
-                    text-transform: uppercase;
-                    display: block;
-                    padding: 2%;
-                    margin-top: 2%;
-                    background-color: rgba(246, 183, 105, 0.824);
-                    border-bottom-left-radius: 40%;
-                    border-top-right-radius: 40%;
-                    margin-right: 0.2rem;
-                }
-                
-                .nav_link_i li a {
-                    text-decoration: none;
-                    margin-bottom: 0.2rem;
-                }
-                
-                .nav_link_i li a:hover {
-                    text-decoration: overline;
-                    margin-bottom: 0.3rem;
-                    border-bottom: 0.1rem;
-                    border-color: black;
-                }
-                
-                .nav_link_i li:hover {
-                    margin-bottom: 1rem;
-                }
-                
-                .home {
-                    height: 10%;
-                    width: 50%;
-                    display: block;
-                    position: relative;
-                    margin-left: 25%;
-                    top: 5.5rem;
-                    letter-spacing: 0.3rem;
-                    word-spacing: 0.7rem;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    text-align: center;
-                }
-                
-                .head_hi {
-                    height: 50%;
-                    font-size: 100%;
-                    display: block;
-                    width: 90%;
-                    margin: 2.5%;
-                    text-align: center;
-                }
-                
-                .head_name {
-                    height: 50%;
-                    font-size: 100%;
-                    display: block;
-                    width: 90%;
-                    margin: 2.5%;
-                    text-align: center;
-                }
-                
-                .home img {
-                    margin-top: 2.5rem;
-                    width: 50%;
-                    height: 50%;
-                    margin: 5%;
-                    display: block;
-                    border-radius: 20%;
-                    margin-left: 25%;
-                }
-                
-                .thought {
-                    font-size: 90%;
-                    margin: 2.5rem;
-                    display: block;
-                    font-family: 'Silkscreen', cursive;
-                }
-                
-                .sec {
-                    background-color: rgb(228, 231, 233);
-                    height: 100vh;
-                }
-                
-                .heading {
-                    text-align: center;
-                    font-size: 3rem;
-                    height: 10%;
-                    font-family: 'Nabla', cursive;
-                }
-                
-                .me_content {
-                    font-size: 100%;
-                    margin: 2.5rem;
-                    display: block;
-                    font-family: 'Silkscreen', cursive;
-                }
-                
-                @media only screen and (max-width: 1000px) {}
-                
-                @media only screen and (max-width: 800px) {
-                    .nav_link_i {
-                        display: flex;
-                        flex-direction: column;
-                        height: 2rem;
-                        align-items: flex-start;
-                        width: 20%;
-                        padding-top: 1.3rem;
-                        padding-left: 0%;
-                    }
-                    .nav_link_i li {
-                        margin: 0.5rem;
-                        padding-left: 0%;
-                    }
-                    .nav_link_i li:hover {
-                        margin-left: 1rem;
-                    }
-                    .home {
-                        top: 3rem;
-                    }
-                    .head_hi {
-                        font-size: 1rem;
-                        margin: 10%;
-                    }
-                    .head_name {
-                        font-size: 1.3rem;
-                    }
-                    .thought {
-                        font-size: 1rem;
-                    }
-                }
-                
-                @media only screen and (max-width: 600px) {}
-                
-                @media only screen and (max-width: 400px) {}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("./bg\ pic.png");
+    background-color: rgb(228, 231, 233);
+    height: 100vh;
+    color: black;
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    background-attachment: scroll, fixed;
+    background-position: center;
+    background-position-y: top;
+}
+
+.nav {
+    display: none;
+}
+
+.nav_link_i {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    align-items: center;
+    padding-left: 6%;
+}
+
+.nav_link_i li {
+    text-transform: uppercase;
+    display: block;
+    padding: 2%;
+    margin-top: 2%;
+    background-color: rgb(246, 182, 105);
+    border-bottom-left-radius: 40%;
+    border-top-right-radius: 40%;
+    margin-right: 0.5rem;
+}
+
+.nav_link_i li a {
+    text-decoration: none;
+    margin-bottom: 0.2rem;
+}
+
+.nav_link_i li a:hover {
+    text-decoration: overline;
+    margin-bottom: 0.3rem;
+    border-bottom: 0.1rem;
+    border-color: black;
+}
+
+.nav_link_i li:hover {
+    margin-bottom: 1rem;
+}
+
+.home {
+    height: 10%;
+    width: 50%;
+    display: block;
+    position: relative;
+    margin-left: 25%;
+    top: 5.5rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 0.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.head_hi {
+    height: 50%;
+    font-size: 100%;
+    display: block;
+    width: 90%;
+    margin: 2.5%;
+    text-align: center;
+}
+
+.head_name {
+    height: 50%;
+    font-size: 100%;
+    display: block;
+    width: 90%;
+    margin: 2.5%;
+    text-align: center;
+}
+
+.home img {
+    margin-top: 2.5rem;
+    width: 50%;
+    height: 50%;
+    margin: 5%;
+    display: block;
+    border-radius: 20%;
+    margin-left: 25%;
+}
+
+.thought {
+    font-size: 90%;
+    margin: 2.5rem;
+    display: block;
+    font-family: 'Silkscreen', cursive;
+}
+
+.sec {
+    background-color: rgb(228, 231, 233);
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    height: 10%;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.me_content {
+    font-size: 1.2rem;
+    margin: 5%;
+    display: block;
+    font-family: 'Alkalami', serif;
+    letter-spacing: 0.05rem;
+    padding: 1% 10%;
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill li {
+    list-style: none;
+    padding: 1rem;
+    background-color: rgb(212, 246, 246);
+    margin: 2rem;
+}
+
+.skill li:hover {
+    background-color: transparent;
+    margin-top: -0.3rem;
+}
+
+.skill li img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact li {
+    list-style: none;
+    padding: 1rem;
+    background-color: rgb(212, 246, 246);
+    margin: 2rem;
+    width: 100px;
+    height: 100px;
+}
+
+.contact li:hover {
+    background-color: transparent;
+    margin-top: -0.3rem;
+}
+
+#con_i {
+    width: 100%;
+    height: 100%;
+}
+
+#EOS {
+    color: rgb(240, 112, 112);
+    text-align: center;
+    background-color: rgb(228, 231, 233);
+    padding-bottom: 2rem;
+}
+
+#pro {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+#pro:hover {
+    opacity: 50%;
+}
+
+.ach {
+    width: 25%;
+    height: 25%;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .home {
+        top: 4rem;
+    }
+    .thought {
+        margin: 1%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav_link_i li {
+        padding: 0.3%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .nav_link_i {
+        display: flex;
+        flex-direction: column;
+        height: 2rem;
+        align-items: flex-start;
+        width: 20%;
+        padding-top: 1.3rem;
+        padding-left: 0%;
+    }
+    .nav_link_i li {
+        margin: 0.5rem;
+        padding-left: 0%;
+    }
+    .nav_link_i li:hover {
+        margin-left: 1rem;
+    }
+    .home {
+        top: 3rem;
+    }
+    .head_hi {
+        font-size: 1rem;
+        margin: 10%;
+    }
+    .head_name {
+        font-size: 1.3rem;
+    }
+    .thought {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_link_i li a {
+        font-size: 0.5rem;
+    }
+    .home {
+        top: 3%;
+        height: min-content;
+        margin-left: 20%;
+    }
+    .head_hi {
+        font-size: 0.5rem;
+        margin: 5%;
+    }
+    .head_name {
+        font-size: 0.6rem;
+        margin: 5%;
+    }
+    .thought {
+        font-size: 0.4rem;
+        margin: 1%;
+    }
+    header {
+        height: 35vh;
+    }
+    .heading {
+        font-size: 1.3rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        height: 42vh;
+    }
+}
