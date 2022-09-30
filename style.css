@@ -354,6 +354,268 @@ header {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .home {
+        width: 30%;
+        padding-left: 5rem;
+    }
+    .head_hi {
+        width: 8rem;
+    }
+    .home img {
+        width: 5rem;
+    }
+    .thought {
+        width: 7rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.3rem;
+    }
+    .me_content {
+        font-size: 0.5rem;
+        margin: 5%;
+        display: block;
+        font-family: 'Alkalami', serif;
+        letter-spacing: 0.05rem;
+        padding: 1% 10%;
+    }
+    .skill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%;
+        align-content: center;
+        height: 75%;
+    }
+    .skill li {
+        height: 30%;
+        width: 30%;
+    }
+    #s_content {
+        display: block;
+        text-align: center;
+        font-family: "Indie Flower";
+    }
+    .skill li:hover {
+        background-color: aquamarine;
+        margin-top: -0.1%;
+    }
+    .skill li img {
+        width: 3rem;
+    }
+    #pro_l img {
+        height: auto;
+        width: 5rem;
+    }
+    #pro_content {
+        width: 10rem;
+        font-size: 0.5rem;
+    }
+    #achievements p {
+        font-size: 0.5rem;
+    }
+    #achievements img {
+        width: 8rem;
+    }
+    .contact li {
+        padding: 0%;
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 40vh;
+    }
+    .home {
+        width: 30%;
+        padding-left: 5rem;
+    }
+    .head_hi {
+        width: 8rem;
+    }
+    .home img {
+        width: 5rem;
+    }
+    .thought {
+        width: 8rem;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.3rem;
+        text-align: left;
+    }
+    .me_content {
+        font-size: 0.5rem;
+        margin: 5%;
+        display: block;
+        font-family: 'Alkalami', serif;
+        letter-spacing: 0.05rem;
+        padding: 1% 10%;
+    }
+    .skill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%;
+        align-content: center;
+        height: 75%;
+    }
+    .skill li {
+        height: 30%;
+        width: 30%;
+    }
+    #s_content {
+        display: block;
+        text-align: center;
+        font-family: "Indie Flower";
+    }
+    .skill li:hover {
+        background-color: aquamarine;
+        margin-top: -0.1%;
+    }
+    .skill li img {
+        width: 3rem;
+    }
+    #pro_l img {
+        height: auto;
+        width: 5rem;
+    }
+    #pro_content {
+        width: 10rem;
+        font-size: 0.5rem;
+    }
+    #achievements p {
+        font-size: 0.5rem;
+    }
+    #achievements img {
+        width: 8rem;
+    }
+    .contact li {
+        padding: 0%;
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        height: 50vh;
+    }
+    #about_me {
+        margin: 10rem;
+    }
+    .me_content {
+        font-size: 0.5rem;
+        margin: 5%;
+        display: block;
+        font-family: 'Alkalami', serif;
+        letter-spacing: 0.05rem;
+        padding: 1% 10%;
+    }
+    .skill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%;
+        align-content: center;
+        height: 75%;
+    }
+    .skill li {
+        height: 30%;
+        width: 30%;
+    }
+    #s_content {
+        display: block;
+        text-align: center;
+        font-family: "Indie Flower";
+    }
+    .skill li:hover {
+        background-color: aquamarine;
+        margin-top: -0.1%;
+    }
+    .skill li img {
+        width: 3rem;
+    }
+    #pro_l img {
+        height: auto;
+        width: 5rem;
+    }
+    #pro_content {
+        width: 10rem;
+        font-size: 0.5rem;
+    }
+    #achievements p {
+        font-size: 0.5rem;
+    }
+    #achievements img {
+        width: 8rem;
+    }
+    .contact li {
+        padding: 0%;
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 600px;
+    }
+    /* #about_me {
+        padding-top: 20%;
+    } */
+    .me_content {
+        font-size: 0.5rem;
+        margin: 5%;
+        display: block;
+        font-family: 'Alkalami', serif;
+        letter-spacing: 0.05rem;
+        padding: 1% 10%;
+    }
+    .skill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%;
+        align-content: center;
+        height: 75%;
+    }
+    .skill li {
+        height: 30%;
+        width: 30%;
+    }
+    #s_content {
+        display: block;
+        text-align: center;
+        font-family: "Indie Flower";
+    }
+    .skill li:hover {
+        background-color: aquamarine;
+        margin-top: -0.1%;
+    }
+    .skill li img {
+        width: 3rem;
+    }
+    #pro_l img {
+        height: auto;
+        width: 5rem;
+    }
+    #pro_content {
+        width: 10rem;
+        font-size: 0.5rem;
+    }
+    #achievements p {
+        font-size: 0.5rem;
+    }
+    #achievements img {
+        width: 8rem;
+    }
+    .contact li {
+        padding: 0%;
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     .home {
         top: 4rem;
