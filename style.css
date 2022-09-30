@@ -32,10 +32,13 @@ header {
     text-transform: uppercase;
     display: block;
     padding: 2%;
-    margin-top: 2%;
+    margin-top: 5%;
     background-color: rgb(246, 182, 105);
-    border-bottom-left-radius: 40%;
-    border-top-right-radius: 40%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-bottom-style: groove;
     margin-right: 0.5rem;
 }
 
@@ -53,6 +56,7 @@ header {
 
 .nav_link_i li:hover {
     margin-bottom: 1rem;
+    background-color: rgb(243, 233, 145);
 }
 
 .home {
@@ -75,6 +79,8 @@ header {
     width: 90%;
     margin: 2.5%;
     text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .head_name {
@@ -105,7 +111,7 @@ header {
 
 .sec {
     background-color: rgb(228, 231, 233);
-    height: 100vh;
+    height: 50vh;
 }
 
 .heading {
@@ -128,18 +134,30 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 2%;
+    align-content: center;
+    height: 50%;
 }
 
 .skill li {
     list-style: none;
     padding: 1rem;
-    background-color: rgb(212, 246, 246);
+    background-color: rgb(226, 251, 135);
     margin: 2rem;
+    border-bottom-style: double;
+    border-style: outset;
+    border-radius: 15%;
+}
+
+#s_content {
+    display: block;
+    text-align: center;
+    font-family: "Indie Flower";
 }
 
 .skill li:hover {
-    background-color: transparent;
-    margin-top: -0.3rem;
+    background-color: aquamarine;
+    margin-top: -0.1%;
 }
 
 .skill li img {
@@ -147,24 +165,124 @@ header {
     width: 4rem;
 }
 
+#pro {
+    width: 25rem;
+    margin-left: 25%;
+    border-radius: 10%;
+}
+
+#pro:hover {
+    opacity: 50%;
+}
+
+#pro_l {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 2rem;
+    justify-self: center;
+    height: 50%;
+}
+
+#pro_l img {
+    height: 90%;
+    width: 20rem;
+}
+
+#pro_content {
+    margin: 1rem;
+    font-family: 'Alkalami', serif;
+    text-transform: capitalize;
+}
+
+#pro_sr {
+    text-decoration: none;
+    color: rgb(147, 226, 43);
+}
+
+#pro_sr:hover {
+    color: rgb(245, 246, 244);
+    background-color: black;
+}
+
+#pro {
+    width: 25rem;
+    margin-left: 25%;
+    border-radius: 10%;
+}
+
+#pro:hover {
+    opacity: 50%;
+}
+
+#pro_l {
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 2rem;
+    justify-self: center;
+    height: 50%;
+}
+
+#pro_l img {
+    height: 90%;
+    width: 20rem;
+}
+
+#pro_content {
+    margin: 1rem;
+    font-family: 'Alkalami', serif;
+    text-transform: capitalize;
+}
+
+#achievements {
+    height: 100vh;
+}
+
+#achievements p {
+    margin: 1rem;
+    font-family: 'Alkalami', serif;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin: 2rem;
+    justify-self: center;
+    height: 50%;
+}
+
+#achievements img {
+    height: 90%;
+    width: 20rem;
+}
+
 .contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 1rem;
+    background-color: rgb(132, 245, 87);
 }
 
 .contact li {
     list-style: none;
     padding: 1rem;
-    background-color: rgb(212, 246, 246);
     margin: 2rem;
-    width: 100px;
-    height: 100px;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+}
+
+.contact li img {
+    width: 2rem;
+    height: 2rem;
 }
 
 .contact li:hover {
     background-color: transparent;
     margin-top: -0.3rem;
+}
+
+#contact {
+    height: 15vh;
 }
 
 #con_i {
@@ -173,26 +291,10 @@ header {
 }
 
 #EOS {
-    color: rgb(240, 112, 112);
+    color: rgb(216, 9, 9);
     text-align: center;
     background-color: rgb(228, 231, 233);
     padding-bottom: 2rem;
-}
-
-#pro {
-    width: 50%;
-    height: 50%;
-    margin-left: 25%;
-}
-
-#pro:hover {
-    opacity: 50%;
-}
-
-.ach {
-    width: 25%;
-    height: 25%;
-    margin-left: 25%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -278,3 +380,4 @@ header {
         height: 42vh;
     }
 }
+
