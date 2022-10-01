@@ -1,701 +1,692 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    background-image: url("./bg\ pic.png");
-    background-color: rgb(228, 231, 233);
-    height: 100vh;
-    color: black;
-    background-repeat: no-repeat;
-    background-size: 100%, cover;
-    background-attachment: scroll, fixed;
-    background-position: center;
-    background-position-y: top;
-}
-
-.nav {
-    display: none;
-}
-
-.nav_link_i {
-    display: flex;
-    flex-direction: row;
-    height: 2rem;
-    align-items: center;
-    padding-left: 6%;
-}
-
-.nav_link_i li {
-    text-transform: uppercase;
-    display: block;
-    padding: 2%;
-    margin-top: 5%;
-    background-color: rgb(246, 182, 105);
-    border-bottom-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border-bottom-style: groove;
-    margin-right: 0.5rem;
-}
-
-.nav_link_i li a {
-    text-decoration: none;
-    margin-bottom: 0.2rem;
-}
-
-.nav_link_i li a:hover {
-    text-decoration: overline;
-    margin-bottom: 0.3rem;
-    border-bottom: 0.1rem;
-    border-color: black;
-}
-
-.nav_link_i li:hover {
-    margin-bottom: 1rem;
-    background-color: rgb(243, 233, 145);
-}
-
-.home {
-    height: 10%;
-    width: 50%;
-    display: block;
-    position: relative;
-    margin-left: 25%;
-    top: 5.5rem;
-    letter-spacing: 0.3rem;
-    word-spacing: 0.7rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-.head_hi {
-    height: 50%;
-    font-size: 100%;
-    display: block;
-    width: 90%;
-    margin: 2.5%;
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-.head_name {
-    height: 50%;
-    font-size: 100%;
-    display: block;
-    width: 90%;
-    margin: 2.5%;
-    text-align: center;
-}
-
-.home img {
-    margin-top: 2.5rem;
-    width: 50%;
-    height: 50%;
-    margin: 5%;
-    display: block;
-    border-radius: 20%;
-    margin-left: 25%;
-}
-
-.thought {
-    font-size: 90%;
-    margin: 2.5rem;
-    display: block;
-    font-family: 'Silkscreen', cursive;
-}
-
-.sec {
-    background-color: rgb(228, 231, 233);
-    height: 50vh;
-}
-
-.heading {
-    text-align: center;
-    font-size: 3rem;
-    height: 10%;
-    font-family: 'Bungee Spice', cursive;
-}
-
-.me_content {
-    font-size: 1.2rem;
-    margin: 5%;
-    display: block;
-    font-family: 'Alkalami', serif;
-    letter-spacing: 0.05rem;
-    padding: 1% 10%;
-}
-
-.skill {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2%;
-    align-content: center;
-    height: 50%;
-}
-
-.skill li {
-    list-style: none;
-    padding: 1rem;
-    background-color: rgb(226, 251, 135);
-    margin: 2rem;
-    border-bottom-style: double;
-    border-style: outset;
-    border-radius: 15%;
-}
-
-#s_content {
-    display: block;
-    text-align: center;
-    font-family: "Indie Flower";
-}
-
-.skill li:hover {
-    background-color: aquamarine;
-    margin-top: -0.1%;
-}
-
-.skill li img {
-    height: 4rem;
-    width: 4rem;
-}
-
-#pro {
-    width: 25rem;
-    margin-left: 25%;
-    border-radius: 10%;
-}
-
-#pro:hover {
-    opacity: 50%;
-}
-
-#pro_l {
-    padding-left: 25%;
-    padding-right: 25%;
-    margin: 2rem;
-    justify-self: center;
-    height: 50%;
-}
-
-#pro_l img {
-    height: 90%;
-    width: 20rem;
-}
-
-#pro_content {
-    margin: 1rem;
-    font-family: 'Alkalami', serif;
-    text-transform: capitalize;
-}
-
-#pro_sr {
-    text-decoration: none;
-    color: rgb(147, 226, 43);
-}
-
-#pro_sr:hover {
-    color: rgb(245, 246, 244);
-    background-color: black;
-}
-
-#pro {
-    width: 25rem;
-    margin-left: 25%;
-    border-radius: 10%;
-}
-
-#pro:hover {
-    opacity: 50%;
-}
-
-#pro_l {
-    padding-left: 25%;
-    padding-right: 25%;
-    margin: 2rem;
-    justify-self: center;
-    height: 50%;
-}
-
-#pro_l img {
-    height: 90%;
-    width: 20rem;
-}
-
-#pro_content {
-    margin: 1rem;
-    font-family: 'Alkalami', serif;
-    text-transform: capitalize;
-}
-
-#achievements {
-    height: 100vh;
-}
-
-#achievements p {
-    margin: 1rem;
-    font-family: 'Alkalami', serif;
-    text-transform: capitalize;
-    font-size: 1rem;
-    padding-left: 25%;
-    padding-right: 25%;
-    margin: 2rem;
-    justify-self: center;
-    height: 50%;
-}
-
-#achievements img {
-    height: 90%;
-    width: 20rem;
-}
-
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
-    background-color: rgb(132, 245, 87);
-}
-
-.contact li {
-    list-style: none;
-    padding: 1rem;
-    margin: 2rem;
-    align-items: center;
-    width: 10px;
-    height: 10px;
-}
-
-.contact li img {
-    width: 2rem;
-    height: 2rem;
-}
-
-.contact li:hover {
-    background-color: transparent;
-    margin-top: -0.3rem;
-}
-
-#contact {
-    height: 15vh;
-}
-
-#con_i {
-    width: 100%;
-    height: 100%;
-}
-
-#EOS {
-    color: rgb(216, 9, 9);
-    text-align: center;
-    background-color: rgb(228, 231, 233);
-    padding-bottom: 2rem;
-}
-
-@media only screen and (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
     header {
-        height: 40vh;
-    }
-    .me_content {
-        font-size: 0.5rem;
-        margin: 5%;
-        display: block;
-        font-family: 'Alkalami', serif;
-        letter-spacing: 0.05rem;
-        padding: 1% 10%;
-    }
-    .skill {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 2%;
-        align-content: center;
-        height: 75%;
-    }
-    .skill li {
-        height: 30%;
-        width: 30%;
-    }
-    #s_content {
-        display: block;
-        text-align: center;
-        font-family: "Indie Flower";
-    }
-    .skill li:hover {
-        background-color: aquamarine;
-        margin-top: -0.1%;
-    }
-    .skill li img {
-        width: 3rem;
-    }
-    #pro_l img {
-        height: auto;
-        width: 5rem;
-    }
-    #pro_content {
-        width: 10rem;
-        font-size: 0.5rem;
-    }
-    #achievements p {
-        font-size: 0.5rem;
-    }
-    #achievements img {
-        width: 8rem;
-    }
-    .contact li {
-        padding: 0%;
-        height: 1rem;
-        width: 1rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .home {
-        width: 30%;
-        padding-left: 5rem;
-    }
-    .head_hi {
-        width: 8rem;
-    }
-    .home img {
-        width: 5rem;
-    }
-    .thought {
-        width: 7rem;
-        letter-spacing: 0.2rem;
-        word-spacing: 0.3rem;
-    }
-    .me_content {
-        font-size: 0.5rem;
-        margin: 5%;
-        display: block;
-        font-family: 'Alkalami', serif;
-        letter-spacing: 0.05rem;
-        padding: 1% 10%;
-    }
-    .skill {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 2%;
-        align-content: center;
-        height: 75%;
-    }
-    .skill li {
-        height: 30%;
-        width: 30%;
-    }
-    #s_content {
-        display: block;
-        text-align: center;
-        font-family: "Indie Flower";
-    }
-    .skill li:hover {
-        background-color: aquamarine;
-        margin-top: -0.1%;
-    }
-    .skill li img {
-        width: 3rem;
-    }
-    #pro_l img {
-        height: auto;
-        width: 5rem;
-    }
-    #pro_content {
-        width: 10rem;
-        font-size: 0.5rem;
-    }
-    #achievements p {
-        font-size: 0.5rem;
-    }
-    #achievements img {
-        width: 8rem;
-    }
-    .contact li {
-        padding: 0%;
-        height: 1rem;
-        width: 1rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        height: 40vh;
-    }
-    .home {
-        width: 30%;
-        padding-left: 5rem;
-    }
-    .head_hi {
-        width: 8rem;
-    }
-    .home img {
-        width: 5rem;
-    }
-    .thought {
-        width: 8rem;
-        letter-spacing: 0.2rem;
-        word-spacing: 0.3rem;
-        text-align: left;
-    }
-    .me_content {
-        font-size: 0.5rem;
-        margin: 5%;
-        display: block;
-        font-family: 'Alkalami', serif;
-        letter-spacing: 0.05rem;
-        padding: 1% 10%;
-    }
-    .skill {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 2%;
-        align-content: center;
-        height: 75%;
-    }
-    .skill li {
-        height: 30%;
-        width: 30%;
-    }
-    #s_content {
-        display: block;
-        text-align: center;
-        font-family: "Indie Flower";
-    }
-    .skill li:hover {
-        background-color: aquamarine;
-        margin-top: -0.1%;
-    }
-    .skill li img {
-        width: 3rem;
-    }
-    #pro_l img {
-        height: auto;
-        width: 5rem;
-    }
-    #pro_content {
-        width: 10rem;
-        font-size: 0.5rem;
-    }
-    #achievements p {
-        font-size: 0.5rem;
-    }
-    #achievements img {
-        width: 8rem;
-    }
-    .contact li {
-        padding: 0%;
-        height: 1rem;
-        width: 1rem;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    header {
-        height: 50vh;
-    }
-    #about_me {
-        margin: 10rem;
-    }
-    .me_content {
-        font-size: 0.5rem;
-        margin: 5%;
-        display: block;
-        font-family: 'Alkalami', serif;
-        letter-spacing: 0.05rem;
-        padding: 1% 10%;
-    }
-    .skill {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 2%;
-        align-content: center;
-        height: 75%;
-    }
-    .skill li {
-        height: 30%;
-        width: 30%;
-    }
-    #s_content {
-        display: block;
-        text-align: center;
-        font-family: "Indie Flower";
-    }
-    .skill li:hover {
-        background-color: aquamarine;
-        margin-top: -0.1%;
-    }
-    .skill li img {
-        width: 3rem;
-    }
-    #pro_l img {
-        height: auto;
-        width: 5rem;
-    }
-    #pro_content {
-        width: 10rem;
-        font-size: 0.5rem;
-    }
-    #achievements p {
-        font-size: 0.5rem;
-    }
-    #achievements img {
-        width: 8rem;
-    }
-    .contact li {
-        padding: 0%;
-        height: 1rem;
-        width: 1rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        height: 600px;
-    }
-    /* #about_me {
-        padding-top: 20%;
-    } */
-    .me_content {
-        font-size: 0.5rem;
-        margin: 5%;
-        display: block;
-        font-family: 'Alkalami', serif;
-        letter-spacing: 0.05rem;
-        padding: 1% 10%;
-    }
-    .skill {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 2%;
-        align-content: center;
-        height: 75%;
-    }
-    .skill li {
-        height: 30%;
-        width: 30%;
-    }
-    #s_content {
-        display: block;
-        text-align: center;
-        font-family: "Indie Flower";
-    }
-    .skill li:hover {
-        background-color: aquamarine;
-        margin-top: -0.1%;
-    }
-    .skill li img {
-        width: 3rem;
-    }
-    #pro_l img {
-        height: auto;
-        width: 5rem;
-    }
-    #pro_content {
-        width: 10rem;
-        font-size: 0.5rem;
-    }
-    #achievements p {
-        font-size: 0.5rem;
-    }
-    #achievements img {
-        width: 8rem;
-    }
-    .contact li {
-        padding: 0%;
-        height: 1rem;
-        width: 1rem;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .home {
-        top: 4rem;
-    }
-    .thought {
-        margin: 1%;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .nav_link_i li {
-        padding: 0.3%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
+        background-image: url("./bg\ pic.png");
+        background-color: rgb(228, 231, 233);
+        height: 100vh;
+        color: black;
+        background-repeat: no-repeat;
+        background-size: 100%, cover;
+        background-attachment: scroll, fixed;
+        background-position: center;
+        background-position-y: top;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
     .nav_link_i {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: 2rem;
-        align-items: flex-start;
-        width: 20%;
-        padding-top: 1.3rem;
-        padding-left: 0%;
+        align-items: center;
+        padding-left: 6%;
     }
+    
     .nav_link_i li {
-        margin: 0.5rem;
-        padding-left: 0%;
+        text-transform: uppercase;
+        display: block;
+        padding: 2%;
+        margin-top: 5%;
+        background-color: rgb(246, 182, 105);
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        border-bottom-style: groove;
+        margin-right: 0.5rem;
     }
-    .nav_link_i li:hover {
-        margin-left: 1rem;
-    }
-    .home {
-        top: 3rem;
-    }
-    .head_hi {
-        font-size: 1rem;
-        margin: 10%;
-    }
-    .head_name {
-        font-size: 1.3rem;
-    }
-    .thought {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
+    
     .nav_link_i li a {
-        font-size: 0.5rem;
+        text-decoration: none;
+        margin-bottom: 0.2rem;
     }
+    
+    .nav_link_i li a:hover {
+        text-decoration: overline;
+        margin-bottom: 0.3rem;
+        border-bottom: 0.1rem;
+        border-color: black;
+    }
+    
+    .nav_link_i li:hover {
+        margin-bottom: 1rem;
+        background-color: rgb(243, 233, 145);
+    }
+    
     .home {
-        top: 3%;
-        height: min-content;
-        margin-left: 20%;
-    }
-    .head_hi {
-        font-size: 0.5rem;
-        margin: 5%;
-    }
-    .head_name {
-        font-size: 0.6rem;
-        margin: 5%;
-    }
-    .thought {
-        font-size: 0.4rem;
-        margin: 1%;
-    }
-    header {
-        height: 35vh;
-    }
-    .heading {
-        font-size: 1.3rem;
-        padding-top: 1rem;
+        height: 10%;
+        width: 50%;
+        display: block;
+        position: relative;
+        margin-left: 25%;
+        top: 5.5rem;
+        letter-spacing: 0.3rem;
+        word-spacing: 0.7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-align: center;
     }
-}
-
-@media only screen and (max-width: 400px) {
-    header {
-        height: 42vh;
+    
+    .head_hi {
+        height: 50%;
+        font-size: 100%;
+        display: block;
+        width: 90%;
+        margin: 2.5%;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
     }
-}
+    
+    .head_name {
+        height: 50%;
+        font-size: 100%;
+        display: block;
+        width: 90%;
+        margin: 2.5%;
+        text-align: center;
+    }
+    
+    .home img {
+        margin-top: 2.5rem;
+        width: 50%;
+        height: 50%;
+        margin: 5%;
+        display: block;
+        border-radius: 20%;
+        margin-left: 25%;
+    }
+    
+    .thought {
+        font-size: 90%;
+        margin: 2.5rem;
+        display: block;
+        font-family: 'Silkscreen', cursive;
+    }
+    
+    .sec {
+        background-color: rgb(228, 231, 233);
+    }
+    
+    .heading {
+        text-align: center;
+        font-size: 3rem;
+        height: 10%;
+        font-family: 'Bungee Spice', cursive;
+    }
+    
+    .me_content {
+        font-size: 1.2rem;
+        margin: 5%;
+        display: block;
+        font-family: 'Alkalami', serif;
+        letter-spacing: 0.05rem;
+        padding: 1% 10%;
+    }
+    
+    .skill {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%;
+        align-content: center;
+        height: 50%;
+    }
+    
+    .skill li {
+        list-style: none;
+        padding: 1rem;
+        background-color: rgb(226, 251, 135);
+        margin: 2rem;
+        border-bottom-style: double;
+        border-style: outset;
+        border-radius: 15%;
+    }
+    
+    #s_content {
+        display: block;
+        text-align: center;
+        font-family: "Indie Flower";
+    }
+    
+    .skill li:hover {
+        background-color: aquamarine;
+        margin-top: -0.1%;
+    }
+    
+    .skill li img {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    #pro {
+        width: 25rem;
+        margin-left: 25%;
+        border-radius: 10%;
+    }
+    
+    #pro:hover {
+        opacity: 50%;
+    }
+    
+    #pro_l {
+        padding-left: 25%;
+        padding-right: 25%;
+        justify-self: center;
+        height: 50%;
+    }
+    
+    #pro_l img {
+        height: 90%;
+        width: 20rem;
+    }
+    
+    #pro_content {
+        margin: 1rem;
+        font-family: 'Alkalami', serif;
+        text-transform: capitalize;
+    }
+    
+    #pro_sr {
+        text-decoration: none;
+        color: rgb(147, 226, 43);
+    }
+    
+    #pro_sr:hover {
+        color: rgb(245, 246, 244);
+        background-color: black;
+    }
+    
+    #pro {
+        width: 25rem;
+        margin-left: 25%;
+        border-radius: 10%;
+    }
+    
+    #pro:hover {
+        opacity: 50%;
+    }
+    
+    #pro_l img {
+        height: 90%;
+        width: 20rem;
+    }
+    
+    #pro_content {
+        margin: 1rem;
+        margin-bottom: 0%;
+        font-family: 'Alkalami', serif;
+        text-transform: capitalize;
+    }
+    
+    #achievements {
+        height: 100vh;
+    }
+    
+    #achievements p {
+        margin: 1rem;
+        font-family: 'Alkalami', serif;
+        text-transform: capitalize;
+        font-size: 1rem;
+        padding-left: 25%;
+        padding-right: 25%;
+        margin: 2rem;
+        justify-self: center;
+        height: 50%;
+    }
+    
+    #achievements img {
+        height: 90%;
+        width: 20rem;
+    }
+    
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+        background-color: rgb(132, 245, 87);
+    }
+    
+    .contact li {
+        list-style: none;
+        padding: 1rem;
+        margin: 2rem;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .contact li img {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .contact li:hover {
+        background-color: transparent;
+        margin-top: -0.3rem;
+    }
+    
+    #contact {
+        height: 15vh;
+    }
+    
+    #con_i {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #EOS {
+        color: rgb(216, 9, 9);
+        text-align: center;
+        background-color: rgb(228, 231, 233);
+    }
+    
+    @media only screen and (max-width: 400px) {
+        header {
+            height: 40vh;
+        }
+        .me_content {
+            font-size: 0.5rem;
+            margin: 5%;
+            display: block;
+            font-family: 'Alkalami', serif;
+            letter-spacing: 0.05rem;
+            padding: 1% 10%;
+        }
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2%;
+            align-content: center;
+            height: 75%;
+        }
+        .skill li {
+            height: 30%;
+            width: 30%;
+        }
+        #s_content {
+            display: block;
+            text-align: center;
+            font-family: "Indie Flower";
+        }
+        .skill li:hover {
+            background-color: aquamarine;
+            margin-top: -0.1%;
+        }
+        .skill li img {
+            width: 3rem;
+        }
+        #pro_l img {
+            height: auto;
+            width: 5rem;
+        }
+        #pro_content {
+            width: 10rem;
+            font-size: 0.5rem;
+        }
+        #achievements p {
+            font-size: 0.5rem;
+        }
+        #achievements img {
+            width: 8rem;
+        }
+        .contact li {
+            padding: 0%;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .home {
+            width: 30%;
+            padding-left: 5rem;
+        }
+        .head_hi {
+            width: 8rem;
+        }
+        .home img {
+            width: 5rem;
+        }
+        .thought {
+            width: 7rem;
+            letter-spacing: 0.2rem;
+            word-spacing: 0.3rem;
+        }
+        .me_content {
+            font-size: 0.5rem;
+            margin: 5%;
+            display: block;
+            font-family: 'Alkalami', serif;
+            letter-spacing: 0.05rem;
+            padding: 1% 10%;
+        }
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2%;
+            align-content: center;
+            height: 75%;
+        }
+        .skill li {
+            height: 30%;
+            width: 30%;
+        }
+        #s_content {
+            display: block;
+            text-align: center;
+            font-family: "Indie Flower";
+        }
+        .skill li:hover {
+            background-color: aquamarine;
+            margin-top: -0.1%;
+        }
+        .skill li img {
+            width: 3rem;
+        }
+        #pro_l img {
+            height: auto;
+            width: 5rem;
+        }
+        #pro_content {
+            width: 10rem;
+            font-size: 0.5rem;
+        }
+        #achievements p {
+            font-size: 0.5rem;
+        }
+        #achievements img {
+            width: 8rem;
+        }
+        .contact li {
+            padding: 0%;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        header {
+            height: 40vh;
+        }
+        .home {
+            width: 30%;
+            padding-left: 5rem;
+        }
+        .head_hi {
+            width: 8rem;
+        }
+        .home img {
+            width: 5rem;
+        }
+        .thought {
+            width: 8rem;
+            letter-spacing: 0.2rem;
+            word-spacing: 0.3rem;
+            text-align: left;
+        }
+        .me_content {
+            font-size: 0.5rem;
+            margin: 5%;
+            display: block;
+            font-family: 'Alkalami', serif;
+            letter-spacing: 0.05rem;
+            padding: 1% 10%;
+        }
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2%;
+            align-content: center;
+            height: 75%;
+        }
+        .skill li {
+            height: 30%;
+            width: 30%;
+        }
+        #s_content {
+            display: block;
+            text-align: center;
+            font-family: "Indie Flower";
+        }
+        .skill li:hover {
+            background-color: aquamarine;
+            margin-top: -0.1%;
+        }
+        .skill li img {
+            width: 3rem;
+        }
+        #pro_l img {
+            height: auto;
+            width: 5rem;
+        }
+        #pro_content {
+            width: 10rem;
+            font-size: 0.5rem;
+        }
+        #achievements p {
+            font-size: 0.5rem;
+        }
+        #achievements img {
+            width: 8rem;
+        }
+        .contact li {
+            padding: 0%;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        header {
+            height: 50vh;
+        }
+        #about_me {
+            margin: 10rem;
+        }
+        .me_content {
+            font-size: 0.5rem;
+            margin: 5%;
+            display: block;
+            font-family: 'Alkalami', serif;
+            letter-spacing: 0.05rem;
+            padding: 1% 10%;
+        }
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2%;
+            align-content: center;
+            height: 75%;
+        }
+        .skill li {
+            height: 30%;
+            width: 30%;
+        }
+        #s_content {
+            display: block;
+            text-align: center;
+            font-family: "Indie Flower";
+        }
+        .skill li:hover {
+            background-color: aquamarine;
+            margin-top: -0.1%;
+        }
+        .skill li img {
+            width: 3rem;
+        }
+        #pro_l img {
+            height: auto;
+            width: 5rem;
+        }
+        #pro_content {
+            width: 10rem;
+            font-size: 0.5rem;
+        }
+        #achievements p {
+            font-size: 0.5rem;
+        }
+        #achievements img {
+            width: 8rem;
+        }
+        .contact li {
+            padding: 0%;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        header {
+            height: 600px;
+        }
+        /* #about_me {
+        padding-top: 20%;
+    } */
+        .me_content {
+            font-size: 0.5rem;
+            margin: 5%;
+            display: block;
+            font-family: 'Alkalami', serif;
+            letter-spacing: 0.05rem;
+            padding: 1% 10%;
+        }
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2%;
+            align-content: center;
+            height: 75%;
+        }
+        .skill li {
+            height: 30%;
+            width: 30%;
+        }
+        #s_content {
+            display: block;
+            text-align: center;
+            font-family: "Indie Flower";
+        }
+        .skill li:hover {
+            background-color: aquamarine;
+            margin-top: -0.1%;
+        }
+        .skill li img {
+            width: 3rem;
+        }
+        #pro_l img {
+            height: auto;
+            width: 5rem;
+        }
+        #pro_content {
+            width: 10rem;
+            font-size: 0.5rem;
+        }
+        #achievements p {
+            font-size: 0.5rem;
+        }
+        #achievements img {
+            width: 8rem;
+        }
+        .contact li {
+            padding: 0%;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+        .home {
+            top: 4rem;
+        }
+        .thought {
+            margin: 1%;
+        }
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        .nav_link_i li {
+            padding: 0.3%;
+        }
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .nav_link_i {
+            display: flex;
+            flex-direction: column;
+            height: 2rem;
+            align-items: flex-start;
+            width: 20%;
+            padding-top: 1.3rem;
+            padding-left: 0%;
+        }
+        .nav_link_i li {
+            margin: 0.5rem;
+            padding-left: 0%;
+        }
+        .nav_link_i li:hover {
+            margin-left: 1rem;
+        }
+        .home {
+            top: 3rem;
+        }
+        .head_hi {
+            font-size: 1rem;
+            margin: 10%;
+        }
+        .head_name {
+            font-size: 1.3rem;
+        }
+        .thought {
+            font-size: 1rem;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .nav_link_i li a {
+            font-size: 0.5rem;
+        }
+        .home {
+            top: 3%;
+            height: min-content;
+            margin-left: 20%;
+        }
+        .head_hi {
+            font-size: 0.5rem;
+            margin: 5%;
+        }
+        .head_name {
+            font-size: 0.6rem;
+            margin: 5%;
+        }
+        .thought {
+            font-size: 0.4rem;
+            margin: 1%;
+        }
+        header {
+            height: 35vh;
+        }
+        .heading {
+            font-size: 1.3rem;
+            padding-top: 1rem;
+            text-align: center;
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        header {
+            height: 42vh;
+        }
+    }
+  
