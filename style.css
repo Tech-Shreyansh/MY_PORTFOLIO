@@ -4,6 +4,10 @@
         box-sizing: border-box;
     }
     
+    body {
+        background-color: rgb(228, 231, 233);
+    }
+    
     header {
         background-image: url("./bg\ pic.png");
         background-color: rgb(228, 231, 233);
@@ -111,6 +115,8 @@
     
     .sec {
         background-color: rgb(228, 231, 233);
+        margin: 1rem;
+        padding: 1rem;
     }
     
     .heading {
@@ -689,4 +695,3 @@
             height: 42vh;
         }
     }
-  
